@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Peaky Blinders - Bar Menu</title>
+    <link rel="stylesheet" href="bar.css">
+</head>
+
+<body class="bar-theme">
+    <nav class="side-nav">
+        <a href="food.html">YEMƏKLƏR</a>
+        <a href="bar.html" class="active">BAR</a>
+        <a href="home.html">Home</a>
+        <a href="rooms.html">Rooms</a>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>BAR MENU</h1>
+            <div class="cart">Səbət: <span id="total">0.00</span> ₼</div>
+        </header>
+
+        <section class="cat">
+            <h2>Fresh</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="https://cdn.medicalpark.com.tr/portakal-suyunun-faydalari.jpg" alt="Mehsul">
+
+                    <div class="info">
+                        <h3>Portokal Fresh<span class="p">15.00₼</span></h3>
+                        <button onclick="add( 'portağal', 15.00)">Səbətə At</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://mado.az/pics/580/580/product/973/Almal_ayran_1724054040.jpg" alt="Mehsul">
+
+                    <div class="info">
+                        <h3>Alma Fresh<span class="p">15.00₼</span></h3>
+
+                        <p>
+                        </p>
+
+                        <button onclick="add( 'Alma', 15.00)">Səbətə At</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://mado.az/uploads/product/969/Nar_fre_1724053547.jpg" alt="Mehsul">
+
+                    <div class="info">
+                        <h3>Nar Fresh<span class="p">15.00₼</span></h3>
+
+                        <p>
+                        </p>
+
+                        <button onclick="add( 'Nar', 18.00)">Səbətə At</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cat">
+            <h2>Cocteyls</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="https://cdn.clopos.com/peakyblinders/42ae4d6a-c6fc-4048-b3fe-8e9de2e39921/original_large.jpg"
+                        alt="Mehsul">
+
+                    <div class="info">
+                        <h3>Long island<span class="p">15.00₼</span></h3>
+
+                        <p>
+                        </p>
+
+                        <button onclick="add( 'island', 18.00)">Səbətə At</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://cdn.clopos.com/peakyblinders/e1b28494-d1bb-40d4-bb32-b7149d6ad86e/original_large.jpg"
+                        alt="Mehsul">
+
+                    <div class="info">
+                        <h3>Aperol spritz<span class="p">15.00₼</span></h3>
+
+                        <p>
+                        </p>
+
+                        <button onclick="add( 'apriol', 18.00)">Səbətə At</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://cdn.clopos.com/peakyblinders/00b64a1d-4192-43f4-b0b8-9361f7cd190e/original_large.jpg"
+                        alt="Mehsul">
+
+                    <div class="info">
+                        <h3>Tommy margarita<span class="p">15.00₼</span></h3>
+
+                        <p>
+                        </p>
+
+                        <button onclick="add( 'tommy', 18.00)">Səbətə At</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cat">
+            <h2>Coffee</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="https://cdn-2.clopos.com/peakyblinders/07190c4a-c41a-4914-8643-6778d9254387/detail@2x.webp"
+                        alt="Mehsul">
+
+                    <div class="info">
+                        <h3>Latte<span class="p">15.00₼</span></h3>
+
+                        <p>
+                        </p>
+
+                        <button onclick="add( 'tommy', 18.00)">Səbətə At</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://cdn-2.clopos.com/peakyblinders/e03d0a3a-c4cf-448d-a85a-76e0b5525cf2/detail@2x.webp"
+                        alt="Mehsul">
+
+                    <div class="info">
+                        <h3>Raff<span class="p">15.00₼</span></h3>
+
+                        <p>
+                        </p>
+
+                        <button onclick="add( 'tommy', 18.00)">Səbətə At</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://cdn-2.clopos.com/peakyblinders/27b38311-d39b-4182-822f-e03fbe2bb021/detail@2x.webp"
+                        alt="Mehsul">
+
+                    <div class="info">
+                        <h3>Cappuccino<span class="p">15.00₼</span></h3>
+
+                        <p>
+                        </p>
+
+                        <button onclick="add( 'tommy', 18.00)">Səbətə At</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cat">
+            <h2>Çaylar</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="https://sia.az/storage/2023/10/10/yasil-cay-ariqlamaq-ucun-4.jpg" alt="Mehsul">
+
+                    <div class="info">
+                        <h3>Yaşil çay<span class="p">15.00₼</span></h3>
+
+                        <p>
+                        </p>
+
+                        <button onclick="add( 'tommy', 18.00)">Səbətə At</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://fizulihuseynov.com/wp-content/uploads/2017/09/keklik-otu-yasil-cay.jpg"
+                        alt="Mehsul">
+
+                    <div class="info">
+                        <h3>Keklikotulu çay<span class="p">15.00₼</span></h3>
+                        <p>
+                        </p>
+
+                        <button onclick="add( 'tommy', 18.00)">Səbətə At</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnGkjrk3nfeWSTOEXLmjTKG9iuC-8uLeb-NQ&s"
+                        alt="Mehsul">
+
+                    <div class="info">
+                        <h3>Milli çay<span class="p">15.00₼</span></h3>
+                        <p>
+                        </p>
+
+                        <button onclick="add( 'tommy', 18.00)">Səbətə At</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cat">
+            <h2>Milkshake</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="https://www.cookingclassy.com/wp-content/uploads/2024/05/strawberry-milkshake-4.jpg"
+                        alt="Mehsul">
+
+                    <div class="info">
+                        <h3>Strawberry Milkshake<span class="p">15.00₼</span></h3>
+
+                        <p>
+                        </p>
+
+                        <button onclick="add( 'tommy', 18.00)">Səbətə At</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://cdn.foodfaithfitness.com/uploads/2024/05/Chocolate-Milkshake-A_chocolate-milkshake-final-shot-2.jpg"
+                        alt="Mehsul">
+
+                    <div class="info">
+                        <h3>Chocolate Milkshake<span class="p">15.00₼</span></h3>
+                        <p>
+                        </p>
+
+                        <button onclick="add( 'tommy', 18.00)">Səbətə At</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://www.organicvalley.coop/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F5dqbssss%2Fproduction-v4%2Fd064c9029aced692680f6faebd047a0ca03fddbf-1356x1576.jpg%3Fw%3D1200&w=3840&q=75"
+                        alt="Mehsul">
+
+                    <div class="info">
+                        <h3>Vanilla Milkshake<span class="p">15.00₼</span></h3>
+                        <p>
+                        </p>
+
+                        <button onclick="add( 'tommy', 18.00)">Səbətə At</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cat">
+            <h2>Şərab</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="https://b7x9kq.arazmarket.az/storage/products/1000070117.png" alt="Mehsul">
+
+                    <div class="info">
+                        <h3>Chabiant 0.75 <span class="p">27.00₼</span></h3>
+                        <p>
+                        </p>
+
+                        <button onclick="add( 'Chabiant', 27.00)">Səbətə At</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://olke.az/file/articles/2022/12/17/1671296022_639dded46ee24639dded46ee251671290580639dded46ee21639dded46ee22.jpg"
+                        alt="Mehsul">
+
+                    <div class="info">
+                        <h3>Evsayağı çaxır 0.5<span class="p">15.00₼</span></h3>
+                        <p>
+                        </p>
+
+                        <button onclick="add( 'tommy', 15.00)">Səbətə At</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://winebay.shop/image/cache/catalog/prod/Chabiant_Madrasa_Red_Dry_03-500x500.jpg"
+                        alt="Mehsul">
+
+                    <div class="info">
+                        <h3>Chabiant premium<span class="p">45.00₼</span></h3>
+                        <p>
+                        </p>
+
+                        <button onclick="add( 'tommy', 45.00)">Səbətə At</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="cat">
+            <h2>Viski</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="https://bespokeunit.com/wp-content/uploads/2021/02/Chivas-Regal-12-Scotch-Whisky-Review.jpg"
+                        alt="Mehsul">
+
+                    <div class="info">
+                        <h3>Chivas<span class="p">100.00₼</span></h3>
+                        <p>
+                        </p>
+
+                        <button onclick="add( 'tommy', 100.00)">Səbətə At</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://images-svetnapojov-cdn.rshop.sk/gallery-big/products/70e1fa5dfb47097fe2eabdc3b5368761.jpg"
+                        alt="Mehsul">
+
+                    <div class="info">
+                        <h3>Jack Daniels<span class="p">130.00₼</span></h3>
+                        <p>
+                        </p>
+
+                        <button onclick="add( 'tommy', 130.00)">Səbətə At</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://www.hiproof.com/cdn/shop/files/jameson-irish-whiskey-80-proof-375ml-4590625.jpg?v=1775373633&width=1500"
+                        alt="Mehsul">
+
+                    <div class="info">
+                        <h3>Jameson<span class="p">130.00₼</span></h3>
+                        <p>
+                        </p>
+
+                        <button onclick="add( 'tommy', 130.00)">Səbətə At</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="cat">
+            <h2>Vodka</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVZfvXbUmamJsggAVuaCBxSmDbJxxmH451iw&s"
+                        alt="Mehsul">
+
+                    <div class="info">
+                        <h3>Nemiroff<span class="p">130.00₼</span></h3>
+                        <p>
+                        </p>
+
+                        <button onclick="add( 'tommy', 130.00)">Səbətə At</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://bevvyco.s3.amazonaws.com/img/drinks/dy/tody/21b31022be58a60e611b330d3fdece47-lg.jpg"
+                        alt="Mehsul">
+
+                    <div class="info">
+                        <h3>Absolout<span class="p">130.00₼</span></h3>
+                        <p>
+                        </p>
+
+                        <button onclick="add( 'tommy', 130.00)">Səbətə At</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://www.luxuryformen.com/media/catalog/product/cache/7f855d93df6faf4f4bb5212befedd5ec/b/e/beluga_noble_vodka_2.jpg"
+                        alt="Mehsul">
+
+                    <div class="info">
+                        <h3>Beluga<span class="p">130.00₼</span></h3>
+                        <p>
+                        </p>
+
+                        <button onclick="add( 'tommy', 130.00)">Səbətə At</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

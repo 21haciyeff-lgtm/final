@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Peaky Blinders - Food Menu</title>
+    <link rel="stylesheet" href="food.css">
+</head>
+
+<body>
+    <nav class="side-nav">
+        <a href="food.html">Food Menu</a>
+        <a href="bar.html" class="active">Bar Menu</a>
+        <a href="home.html">Home</a>
+        <a href="rooms.html">Rooms</a>
+    </nav>
+    <header>
+        <div class="container">
+            <header>
+
+                <div class="cart">Səbət: <span id="total">0.00</span> ₼</div>
+            </header>
+            <section class="cat">
+                <h2>Kabablar</h2>
+                <div class="grid">
+
+
+                    <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaZhaIkwBWeLze9xsIRj-l8GjdHkXOG52I0g&s"
+                            alt="Mehsul">
+
+                        <div class="info">
+                            <h3>Lüle <span class="p">15.00₼</span></h3>
+
+                            <p>Tərkibi: Quzu əti və quyruğun zərgər dəqiqliyi ilə qiymələnmiş harmoniyası. İçərisindəki
+                                soğan suyu ona xüsusi şirəlilik qatır.</p>
+                            <button onclick="add('lule', 15.00)">Səbətə At</button>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="card">
+                        <img src="https://images.bolt.eu/store/2025/2025-01-30/5d7a26e8-8d53-49d5-9fcf-78a678c7c998.jpeg"
+                            alt="Mehsul">
+
+                        <div class="info">
+                            <h3>Tike <span class="p">15.00₼</span></h3>
+
+                            <p>Tərkibi:Quzu ətinin bel və ya bud hissəsindən seçilmiş tikələr, quyruq, duz, istiot</p>
+
+                            <button onclick="add( 'tike',15.00)">Səbətə At</button>
+                        </div>
+                    </div>
+
+                    <br>
+                    <div class="card">
+                        <img src="https://imageproxy.wolt.com/assets/67c1d51db3331165b4c86bca" alt="Mehsul">
+
+                        <div class="info">
+                            <h3>Antirkot<span class="p">15.00₼</span></h3>
+
+                            <p>Tərkibi: Sümük üstündə bişən quzu qabırğaları. Kəklikotu ilə marinad olunmuş bu təam
+                                sümüyün öz ətrini ətə tam hopdurur.</p>
+
+                            <button onclick="add('antricot',15.00)">Səbətə At</button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyzMb0f63MJPqKQaiD82m718CSBFSw5W1zEg&s"
+                            alt="Mehsul">
+
+                        <div class="info">
+                            <h3>Dana Basdirma <span class="p">15.00₼</span></h3>
+
+                            <p>Tərkibi:Quzu ətinin bel və ya bud hissəsindən seçilmiş tikələr, quyruq, duz, istiot</p>
+
+                            <button onclick="add(15.00)">Səbətə At</button>
+                        </div>
+                    </div>
+
+
+            </section>
+            <section class="cat">
+                <h2>Desertlər</h2>
+                <div class="grid">
+                    <div class="card">
+                        <img src="https://cdn.clopos.com/peakyblinders/9acc6589-2ad6-48d7-a5f5-e55754cb7495/extra_large.jpg"
+                            alt="Mehsul">
+
+                        <div class="info">
+                            <h3>Sebastian çizkeyk <span class="p">15.00₼</span></h3>
+
+                            <p>Tərkibi:Quzu ətinin bel və ya bud hissəsindən seçilmiş tikələr, quyruq, duz, istiot</p>
+
+                            <button onclick="add(15.00)">Səbətə At</button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card">
+                        <img src="https://cdn.clopos.com/peakyblinders/bb484879-933f-42c8-8e55-e9a19d483e6f/extra_large.jpg"
+                            alt="Mehsul">
+
+                        <div class="info">
+                            <h3>Balli Tort <span class="p">15.00₼</span></h3>
+
+                            <p>Tərkibi:Quzu ətinin bel və ya bud hissəsindən seçilmiş tikələr, quyruq, duz, istiot</p>
+
+                            <button onclick="add(15.00)">Səbətə At</button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card">
+                        <img src="https://cdn.clopos.com/peakyblinders/ff29b10d-fd0a-4f05-8f44-9a6e449fedee/extra_large.jpg"
+                            alt="Mehsul">
+
+                        <div class="info">
+                            <h3>Şokalad Vulkan <span class="p">15.00₼</span></h3>
+
+                            <p>Tərkibi:Quzu ətinin bel və ya bud hissəsindən seçilmiş tikələr, quyruq, duz, istiot</p>
+
+                            <button onclick="add(15.00)">Səbətə At</button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card">
+                        <img src="https://cdn.clopos.com/peakyblinders/b27849f7-dce7-4e9e-9449-6a171637414b/extra_large.jpg"
+                            alt="Mehsul">
+
+                        <div class="info">
+                            <h3>Kűnefe <span class="p">15.00₼</span></h3>
+
+                            <p>Tərkibi:Quzu ətinin bel və ya bud hissəsindən seçilmiş tikələr, quyruq, duz, istiot</p>
+
+                            <button onclick="add(15.00)">Səbətə At</button>
+                        </div>
+                    </div>
+                    <br>
+
+                </div>
+            </section>
+            <section class="cat">
+                <h2>Salatlar</h2>
+                <div class="grid">
+                    <div class="card">
+                        <img src="https://cdn.clopos.com/peakyblinders/1a083289-8af6-4b5e-ace7-c7589ee44261/extra_large.jpg"
+                            alt="Mehsul">
+
+                        <div class="info">
+                            <h3>Çoban Salati<span class="p">15.00₼</span></h3>
+
+                            <p>Tərkibi:pomidor, xiyar, bibər, göyərti, pendir 300qr</p>
+
+                            <button onclick="add(15.00)">Səbətə At</button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card">
+                        <img src="https://cdn.clopos.com/peakyblinders/6988bf9a-3a1e-41bb-b02d-4fe69701a95b/original_large.jpg"
+                            alt="Mehsul">
+
+                        <div class="info">
+                            <h3>Krivetka popkorn <span class="p">15.00₼</span></h3>
+
+                            <p>Tərkibi:qarışıq göyərti, krivetka, pomidor, qarğıdalı, limon(320qr)</p>
+
+                            <button onclick="add(15.00)">Səbətə At</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://cdn.clopos.com/peakyblinders/88f3e034-8f6f-41b8-b6b6-737ba64aea6b/extra_large.jpg"
+                            alt="Mehsul">
+
+                        <div class="info">
+                            <h3>Portağal souslu ət salatı <span class="p">15.00₼</span></h3>
+
+                            <p>Tərkibi:qarışıq göyərti, pomidor, can əti, xiyar, portağal (350qr)</p>
+
+                            <button onclick="add(15.00)">Səbətə At</button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card">
+                        <img src="https://cdn.clopos.com/peakyblinders/5d7bedb9-7b18-4bc7-8e6f-e05fa3cf4c98/original_large.jpg"
+                            alt="Mehsul">
+
+                        <div class="info">
+                            <h3>Vişnəli pomidor salatı<span class="p">15.00₼</span></h3>
+
+                            <p>Tərkibi: pomidoru, albalı, acı bibər, qırmızı soğan(300qr)
+                            </p>
+
+                            <button onclick="add(15.00)">Səbətə At</button>
+                        </div>
+                    </div>
+                    <br>
+
+                </div>
+            </section>
+            <section class="cat">
+                <h2>İsti yeməklər</h2>
+                <div class="grid">
+                    <div class="card">
+                        <img src="https://cdn.clopos.com/peakyblinders/78539489-a767-4153-850a-3f7464d030c4/extra_large.jpg"
+                            alt="Mehsul">
+
+                        <div class="info">
+                            <h3>Quzu nar qovurma<span class="p">15.00₼</span></h3>
+
+                            <p>Tərkibi: quzu əti, şabalıd, nar, turşu, soğan (260qr)
+                            </p>
+
+                            <button onclick="add(15.00)">Səbətə At</button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card">
+                        <img src="https://cdn.clopos.com/peakyblinders/afc703ad-26bc-4a72-b1dc-8b7819dde2dc/original_large.jpg"
+                            alt="Mehsul">
+
+                        <div class="info">
+                            <h3>İspanaqlı qaymaqlı dana əti<span class="p">15.00₼</span></h3>
+
+                            <p>Tərkibi: ispanaq, dana əti, qaymaq (250qr)
+                            </p>
+
+                            <button onclick="add(15.00)">Səbətə At</button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card">
+                        <img src="https://cdn.clopos.com/peakyblinders/e0c3711e-db2e-4296-b9d3-3c4f1ab2c55f/extra_large.jpg"
+                            alt="Mehsul">
+
+                        <div class="info">
+                            <h3>Vişnəli can əti<span class="p">15.00₼</span></h3>
+
+                            <p>Tərkibi:vişnə, dana , əti soğan
+                            </p>
+
+                            <button onclick="add(15.00)">Səbətə At</button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card">
+                        <img src="https://cdn.clopos.com/peakyblinders/8ec6567f-fc34-4b35-bb3a-b2f9cabdb054/extra_large.jpg"
+                            alt="Mehsul">
+
+                        <div class="info">
+                            <h3>Ananaslı can əti<span class="p">15.00₼</span></h3>
+
+                            <p>Tərkibi: ananas, can əti, rəngli bibər(300qr)
+                            </p>
+
+                            <button onclick="add(15.00)">Səbətə At</button>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </section>
+            <section class="cat">
+                <h2>Qəlyanaltılar</h2>
+                <div class="grid">
+                    <div class="card">
+                        <img src="https://cdn.clopos.com/peakyblinders/92a9f07b-55f1-4905-8ea3-a17d20560f4c/extra_large.jpg"
+                            alt="Mehsul">
+
+                        <div class="info">
+                            <h3>Pendir assorti<span class="p">15.00₼</span></h3>
+
+                            <p>Tərkibi: ağ pendir, motal pendiri, hisli pendir, çedar, holland pendiri, şor(350qr)
+                            </p>
+
+                            <button onclick="add(15.00)">Səbətə At</button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card">
+                        <img src="https://cdn.clopos.com/peakyblinders/e5bb93ca-aabc-47fe-b2ac-8a1ccd03b8a4/original_large.jpg"
+                            alt="Mehsul">
+
+                        <div class="info">
+                            <h3>Ət assorti<span class="p">15.00₼</span></h3>
+
+                            <p>Tərkibi:ədviyyatlı can əti, toyuq əti, dil, hind quşu əti, toyuq ruleti(400qr)
+                            </p>
+
+                            <button onclick="add(15.00)">Səbətə At</button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card">
+                        <img src="https://cdn.clopos.com/peakyblinders/910bea48-e438-461d-8726-d37b2b5846e4/original_large.jpg"
+                            alt="Mehsul">
+
+                        <div class="info">
+                            <h3>Badımcan ruleti<span class="p">15.00₼</span></h3>
+
+                            <p>Tərkibi:badımcan, qoz, soğan, turşu(300qr)
+                            </p>
+
+                            <button onclick="add(15.00)">Səbətə At</button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card">
+                        <img src="https://cdn.clopos.com/peakyblinders/71cf325e-61a1-4244-9306-af42b3ba06a4/original_large.jpg"
+                            alt="Mehsul">
+
+                        <div class="info">
+                            <h3>Sparja<span class="p">15.00₼</span></h3>
+
+                            <p>Tərkibi: qulancar xüsusi ədviyyatlı(100qr)
+                            </p>
+
+                            <button onclick="add(15.00)">Səbətə At</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="cat">
+                <h2>Şorbalar</h2>
+                <div class="grid">
+                    <div class="card">
+                        <img src="https://cdn.clopos.com/peakyblinders/c513acc2-8d99-4860-a99d-636e1bfb492d/extra_large.jpg"
+                            alt="Mehsul">
+
+                        <div class="info">
+                            <h3>Göbelek Şorbasi<span class="p">15.00₼</span></h3>
+
+                            <p>Tərkibi:göbələk, qaymaq, soğan, sarımsağ (220qr)
+                            </p>
+
+                            <button onclick="add(8.00)">Səbətə At</button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card">
+                        <img src="https://cdn.clopos.com/peakyblinders/0789d22d-1ae6-4347-9ad6-bf56cbd291aa/extra_large.jpg"
+                            alt="Mehsul">
+
+                        <div class="info">
+                            <h3>Şabalid Șorbasi<span class="p">15.00₼</span></h3>
+
+                            <p>Tərkibi:şabalıd, soğan, qaymaq (200qr)
+                            </p>
+
+                            <button onclick="add(8.00)">Səbətə At</button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card">
+                        <img src="https://cdn.clopos.com/peakyblinders/bf9798fe-84a2-443a-8b65-495d471eb5c6/extra_large.jpg"
+                            alt="Mehsul">
+
+                        <div class="info">
+                            <h3>Tomat Şorbasi<span class="p">15.00₼</span></h3>
+
+                            <p>Tərkibi:(pomidor, kök, soğan, qaymaq) (200qr)
+                            </p>
+
+                            <button onclick="add(7.00)">Səbətə At</button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card">
+                        <img src="https://cdn.clopos.com/peakyblinders/c83c3a39-8465-46a7-a083-e3ae1481207b/original_large.jpg"
+                            alt="Mehsul">
+
+                        <div class="info">
+                            <h3>Merci Şorbasi<span class="p">15.00₼</span></h3>
+
+                            <p>Tərkibi:mərci, soğan, kök, pomidor pastası, limon(200qr)
+                            </p>
+
+                            <button onclick="add(8.00)">Səbətə At</button>
+                        </div>
+                    </div>
+                    <br>
+
+                </div>
+            </section>
+            <section class="cat">
+                <h2>Pizzalar</h2>
+                <div class="grid">
+                    <div class="card">
+                        <img src="https://cdn.clopos.com/peakyblinders/000f3580-dbaf-4168-98e3-b6da42030c22/original_large.jpg"
+                            alt="Mehsul">
+
+                        <div class="info">
+                            <h3><span class="p">15.00₼</span></h3>
+
+                            <p>Tərkibi:xəmir, mozarella pendiri, pomidor sousu, toyuq əti, bibər, göbələk, peperoni,
+                                zeytun, can əti, pomidor (30sm)
+                            </p>
+
+                            <button onclick="add( 'mix pizza', 18.00)">Səbətə At</button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card">
+                        <img src="https://cdn.clopos.com/peakyblinders/f38dbd42-989d-44ba-a8cc-ffb02cb52c35/extra_large.jpg"
+                            alt="Mehsul">
+
+                        <div class="info">
+                            <h3>Peperoni Pizza<span class="p">15.00₼</span></h3>
+
+                            <p>Tərkibi:xəmir, mozarella pendiri, pomidor sousu, peperoni(30sm)
+                            </p>
+
+                            <button onclick="add( 'peperoni pizza', 18.00)">Səbətə At</button>
+                        </div>
+                    </div>
+
+                    <br>
+                    <div class="card">
+                        <img src="https://cdn.clopos.com/peakyblinders/900b124e-240a-405d-abd1-afcb49b4a755/extra_large.jpg"
+                            alt="Mehsul">
+
+                        <div class="info">
+                            <h3>Sezar Pizza<span class="p">15.00₼</span></h3>
+
+                            <p>Tərkibi:(xəmir, mozarella pendiri, pomidor sousu, aysberq ) (30sm)
+                            </p>
+
+                            <button onclick="add(18.00)">Səbətə At</button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card">
+                        <img src="https://cdn.clopos.com/peakyblinders/32bdc7d9-6c2d-41dc-8b53-81c5bdfd28cf/original_large.jpg"
+                            alt="Mehsul">
+
+                        <div class="info">
+                            <h3>Marqarita pizza<span class="p">15.00₼</span></h3>
+
+                            <p>Tərkibi:(xəmir, mozarella pendiri, pomidor sousu) (30sm)
+                            </p>
+
+                            <button onclick="add(15.00)">Səbətə At</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="cat">
+                <h2>Pastalar</h2>
+                <div class="grid">
+                    <div class="card">
+                        <img src="https://cdn.clopos.com/peakyblinders/8368ab08-5e66-4a8f-a774-da80fcc4ae1b/original_large.jpg"
+                            alt="Mehsul">
+
+                        <div class="info">
+                            <h3>Fettuçini alfredo<span class="p">15.00₼</span></h3>
+
+                            <p>Tərkibi:(fettuçini makaronu, toyuq filesi, göbələk, qaymaq, parmezan) (350qr)
+
+
+                            </p>
+
+                            <button onclick="add(18.00)">Səbətə At</button>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="card">
+                        <img src="https://cdn.clopos.com/peakyblinders/c98f7b39-d8c5-41f0-bdfd-4e2f39dbc4e1/extra_large.jpg"
+                            alt="Mehsul">
+
+                        <div class="info">
+                            <h3>Penne seafood<span class="p">15.00₼</span></h3>
+
+                            <p>Tərkibi:(penne makaronu, krivetka, qızıl balıq, parmezan pendiri) (250qr)
+                            </p>
+
+                            <button onclick="add(18.00)">Səbətə At</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="cat">
+                <h2>Sendviç və Burgerlər</h2>
+                <div class="grid">
+                    <div class="card">
+                        <img src="https://cdn.clopos.com/peakyblinders/195f6357-4157-409b-ba97-a931849d3d1e/original_large.jpg"
+                            alt="Mehsul">
+
+                        <div class="info">
+                            <h3>SezarRoll<span class="p">15.00₼</span></h3>
+
+                            <p>Tərkibi:(toyuq filesi, kahı, pomidor, xiyar, xüsusi sous, tortilla lavaş)
+                            </p>
+
+                            <button onclick="add(18.00)">Səbətə At</button>
+                        </div>
+                    </div>
+
+                    <br>
+                    <div class="card">
+                        <img src="https://cdn.clopos.com/peakyblinders/eae5c709-d661-4fcc-a316-42686e737099/original_large.jpg"
+                            alt="Mehsul">
+
+                        <div class="info">
+                            <h3>Klab Sandiwich<span class="p">15.00₼</span></h3>
+
+                            <p>Tərkibi:(tost çörək, toyuq əti, pomidor, turşu xiyar, yumurta, pendir, kartof fri,
+                                ketçup, mayonez)
+                            </p>
+
+                            <button onclick="add(18.00)">Səbətə At</button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card">
+                        <img src="https://cdn.clopos.com/peakyblinders/376f5ba0-4fe2-443a-a32a-7d556cc37965/original_large.jpg"
+                            alt="Mehsul">
+
+                        <div class="info">
+                            <h3>Çizburger<span class="p">15.00₼</span></h3>
+
+                            <p>Tərkibi(burger çörəyi, dana əti, pomidor, turşu xiyar, pendir, kartof fri, ketçup,
+                                mayonez)
+                            </p>
+
+                            <button onclick="add(18.00)">Səbətə At</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="cat">
+                <h2>Balıq yeməkləri</h2>
+                <div class="grid">
+                    <div class="card">
+                        <img src="https://cdn.clopos.com/peakyblinders/f3e35d61-6e05-4f75-a9d5-f0d12037e341/original_large.jpg"
+                            alt="Mehsul">
+                        <div class="info">
+                            <h3>Farel tava/manqal<span class="p">15.00₼</span></h3>
+                            <p>Tərkibi:
+                            </p>
+                            <button onclick="add(22.00)">Səbətə At</button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card">
+                        <img src="https://qebulol.az/wp-content/uploads/2025/05/Unknown-10.jpeg" alt="Mehsul">
+
+                        <div class="info">
+                            <h3>Çupra Balıq Tava/Manqal<span class="p">15.00₼</span></h3>
+
+                            <p>Tərkibi:
+                            </p>
+
+                            <button onclick="add(18.00)">Səbətə At</button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlNuJep7uQprP4sZ9W9LlIw49L1e2HxfJAIA&s"
+                            alt="Mehsul">
+
+                        <div class="info">
+                            <h3>Qızıl Baliq Steak<span class="p">15.00₼</span></h3>
+
+                            <p>Tərkibi:
+                            </p>
+
+                            <button onclick="add(18.00)">Səbətə At</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="cat">
+                <h2>Pivə mezələri</h2>
+                <div class="grid">
+                    <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-LS5DYiCDzAWOidoGGsw6e7nyh2xXSSEeNg&s"
+                            alt="Mehsul">
+
+                        <div class="info">
+                            <h3>Qrenki Sade/Pendirli<span class="p">15.00₼</span></h3>
+                            <p>Tərkibi:
+                            </p>
+
+
+
+                            <button onclick="add(18.00)">Səbətə At</button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card">
+                        <img src="https://cdn.clopos.com/peakyblinders/41a758a4-bec2-43b6-a2c3-d0a946758dc9/original_large.jpg"
+                            alt="Mehsul">
+
+                        <div class="info">
+                            <h3>Fimi<span class="p">15.00₼</span></h3>
+
+                            <p>Tərkibi(Çips,goyerti,saçaq pendir
+                                )
+                            </p>
+
+                            <button onclick="add(18.00)">Səbətə At</button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card">
+                        <img src="https://cdn.clopos.com/peakyblinders/9ef50066-f46e-4e82-a545-117318febc23/original_large.jpg"
+                            alt="Mehsul">
+
+                        <div class="info">
+                            <h3>Krivetka suxaridə<span class="p">15.00₼</span></h3>
+
+                            <p>Tərkibi:(krivetka, tempura unu, şirin acılı sous) (160qr)
+                            </p>
+
+                            <button onclick="add(18.00)">Səbətə At</button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+        <script src="food.js"></script>
+</body>
+
+</html>
